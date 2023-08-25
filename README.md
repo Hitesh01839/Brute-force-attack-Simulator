@@ -17,7 +17,7 @@ python vigilantcrack.py --url <target_url> --username <target_username> --passwo
 
 ## Example
 ```bash
-python vigilantcrack.py --url https://example.com/login --username admin --passwords passwords.txt
+python vigilantcrack.py --url https://example.com/login --username admin --passwords ["letmein", "password1]
 ```
 
 ## Disclaimer
