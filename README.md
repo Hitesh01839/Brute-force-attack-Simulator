@@ -13,7 +13,7 @@ python vigilantcrack.py --url <target_url> --username <target_username> --passwo
 ## Arguments
 - --url: The URL of the target website's login page.
 - --username: The target username you want to test.
-- --passwords: A text file containing a list of potential passwords, with one password per line.
+- --passwords: A list of potential passwords.
 
 ## Example
 ```bash
