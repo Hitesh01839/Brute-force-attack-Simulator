@@ -1,3 +1,5 @@
+#!/bin/python3
+
 import argparse
 import banner
 import requests
@@ -16,15 +18,15 @@ parser.add_argument('--wordlist', help="Wordlist of passwords to bruteforce the 
 args = parser.parse_args()
 
 
-def simulate_brute_force(target_url: str, target_username: str, password_list: list) -> bool:
+def simulate_brute_force(target_url: str, target_username: str, password_list) -> bool:
     """Function to simulate a brute force operation against the specified URL"""
     
-    for password in password_list:
+    with open(password_list, 'r') as f:
+        password = f.read()
         payload = {
             'username': str(target_username),
             'password': str(password)
         }
-
         try:
             response = requests.post(target_url, data=payload)
 

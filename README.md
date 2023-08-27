@@ -4,20 +4,20 @@ VigilantCrack is a Python script that simulates a brute force attack on a websit
 
 ## Usage
 
-To run VigilantCrack, you need to provide the URL of the target website, the target username, and a list of potential passwords to test.
+To run VigilantCrack, you need to provide the URL of the target website, the target username, and a wordlist of potential passwords to test.
 
 ```bash
-python vigilantcrack.py --url <target_url> --username <target_username> --passwords <password_list>
+python vigilantcrack.py --url <target_url> --username <target_username> --passwords <password_wordlist_file>
 ```
 
 ## Arguments
 - --url: The URL of the target website's login page.
 - --username: The target username you want to test.
-- --passwords: A list of potential passwords.
+- --passwords: A wordlist of potential passwords.
 
 ## Example
 ```bash
-python vigilantcrack.py --url https://example.com/login --username admin --passwords ["letmein", "password1]
+python vigilantcrack.py --url https://example.com/login --username admin --passwords potential_passwords_list.txt
 ```
 
 ## Disclaimer
